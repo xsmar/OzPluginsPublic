@@ -1,6 +1,8 @@
 
 # Auto MLM
 
+Download from [Releases](https://github.com/xsmar/OzPluginsPublic/releases/tag/release)
+
 **Requirements**:
 - Dragon Pickaxe if using the Use Spec option
 
