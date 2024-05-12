@@ -2,7 +2,7 @@ Free plugins. I'm still learning, so they won't be the cleanest. I do a lot of s
 
 
 # Plugin List:
-- [Auto MLM](https://github.com/xsmar/OzPluginsPublic/AutoMLM/README.md)
+- [Auto MLM](https://github.com/xsmar/OzPluginsPublic/tree/main/AutoMLM)
 
 # Coming soon:
 - Auto Combat
