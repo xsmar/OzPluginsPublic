@@ -1,0 +1,4 @@
+rootProject.name = 'ozplugins'
+include 'EthansApi'
+include 'AutoMLM'
+
