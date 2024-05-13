@@ -31,6 +31,7 @@ allprojects {
 dependencies {
     implementation project(path: ':EthansApi')
     implementation project(path: ':AutoMLM')
+    implementation project(path: ':AutoNMZ')
     implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
 }
 
@@ -46,7 +47,7 @@ sourceSets {
 }
 
 group = 'com.ozplugins'
-version = '0.1'
+version = '0.1.1'
 sourceCompatibility = "11"
 
 task FatJar(type: Jar) {

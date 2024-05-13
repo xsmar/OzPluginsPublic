@@ -1,5 +1,5 @@
 
-# Auto MLM
+# Auto MLM v0.1
 
 Download from [Releases](https://github.com/xsmar/OzPluginsPublic/releases/tag/release)
 

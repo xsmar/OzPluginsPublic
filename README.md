@@ -3,13 +3,15 @@ Free plugins. I'm still learning, so they won't be the cleanest. I do a lot of s
 
 # Plugin List:
 - [Auto MLM](https://github.com/xsmar/OzPluginsPublic/tree/main/AutoMLM)
+- [Auto NMZ](https://github.com/xsmar/OzPluginsPublic/tree/main/AutoNMZ)
+
 
 # Coming soon:
 - Auto Combat
-- Auto NMZ
 - Auto Scurrius
 
 # Latest update(s):
+- Added Auto NMZ
 - Added Auto MLM
 
 Feel free to PR.
