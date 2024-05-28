@@ -16,7 +16,7 @@ import java.util.concurrent.Executors;
 import static java.awt.event.InputEvent.BUTTON1_DOWN_MASK;
 
 public class MousePackets{
-
+    
     static Client client = RuneLite.getInjector().getInstance(Client.class);
     private static final Random random = new Random();
     private static long randomDelay = randomDelay();
@@ -84,7 +84,7 @@ public class MousePackets{
         client.getCanvas().dispatchEvent(keyPress);
         KeyEvent keyRelease = new KeyEvent(client.getCanvas(), KeyEvent.KEY_RELEASED, System.currentTimeMillis(), 0, KeyEvent.VK_BACK_SPACE);
         client.getCanvas().dispatchEvent(keyRelease);
-        KeyEvent keyTyped = new KeyEvent(client.getCanvas(), KeyEvent.KEY_TYPED, System.currentTimeMillis(), 0, KeyEvent.VK_BACK_SPACE);
+        KeyEvent keyTyped = new KeyEvent(client.getCanvas(), KeyEvent.KEY_TYPED, System.currentTimeMillis(), 0, KeyEvent.VK_UNDEFINED);
         client.getCanvas().dispatchEvent(keyTyped);
     }
     @SneakyThrows

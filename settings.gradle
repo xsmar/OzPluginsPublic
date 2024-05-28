@@ -2,4 +2,7 @@ rootProject.name = 'ozplugins'
 include 'EthansApi'
 include 'AutoMLM'
 include 'AutoNMZ'
+include 'AutoCombat'
+include 'AutoScurrius'
+include 'AutoSandstone'
 
