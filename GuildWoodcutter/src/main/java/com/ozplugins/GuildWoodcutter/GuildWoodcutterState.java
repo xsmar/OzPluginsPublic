@@ -1,0 +1,17 @@
+package com.ozplugins.GuildWoodcutter;
+
+public enum GuildWoodcutterState
+{
+	TIMEOUT,
+	GET_MISSING_REQUIRED_ITEMS,
+	PICK_UP_NEST,
+	FIND_BANK,
+	CHOP_TREE,
+	DEPOSIT_LOGS,
+	DROP_LOGS,
+	ANIMATING,
+	UNHANDLED_STATE,
+	BANK_PIN,
+	MOVING,
+	IDLE;
+}
