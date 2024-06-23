@@ -1,7 +1,8 @@
 Free plugins. I'm still learning, so they won't be the cleanest. I do a lot of stupid shit.
 
 If you have any questions, suggestions or feedback reach out.
-<img src="https://discord.com/api/guilds/1250973586538106931/widget.png?style=banner4" alt="Discord Banner 4"/>
+
+[![Discord Banner 4](https://discordapp.com/api/guilds/1250973586538106931/widget.png?style=banner4)](https://discord.gg/zadCEjbRy6)
 
 # Plugin List:
 - [Auto MLM](https://github.com/xsmar/OzPluginsPublic/tree/main/AutoMLM)
