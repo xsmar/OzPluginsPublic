@@ -1,5 +1,7 @@
 Free plugins. I'm still learning, so they won't be the cleanest. I do a lot of stupid shit.
 
+If you have any questions, suggestions or feedback reach out.
+<img src="https://discord.com/api/guilds/1250973586538106931/widget.png?style=banner4" alt="Discord Banner 4"/>
 
 # Plugin List:
 - [Auto MLM](https://github.com/xsmar/OzPluginsPublic/tree/main/AutoMLM)
@@ -20,9 +22,9 @@ Free plugins. I'm still learning, so they won't be the cleanest. I do a lot of s
 - Added Auto Scurrius
 - Added Auto Sandstone
 - Added Auto Combat
+- Added Auto MTA
+- Added Auto WC Guild
+- Added Auto Mining Guild
+- Added Auto Shopper
 
 Feel free to PR.
-
-If you have any questions, suggestions or feedback reach out.
-
-<a href="https://discordapp.com/users/138904377032179712"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
