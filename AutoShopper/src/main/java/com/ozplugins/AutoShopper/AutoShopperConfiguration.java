@@ -108,7 +108,17 @@ public interface AutoShopperConfiguration extends Config {
         return 100;
     }
 
-
+    @ConfigItem(
+            keyName = "ItemMaximumAmount",
+            name = "Anti Overstock",
+            position = 21,
+            section = "firstItemConfig",
+            description = "If shop has more than x amount it will avoid buying from it."
+    )
+    default int ItemMaximumAmount()
+    {
+        return 10;
+    }
 
     @ConfigSection(
             //keyName = "delayTickConfig",
