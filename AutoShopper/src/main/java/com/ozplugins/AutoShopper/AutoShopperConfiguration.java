@@ -112,7 +112,7 @@ public interface AutoShopperConfiguration extends Config {
             keyName = "ItemMaximumAmount",
             name = "Anti Overstock",
             position = 21,
-            section = "firstItemConfig",
+            section = "setupConfig",
             description = "If shop has more than x amount it will avoid buying from it."
     )
     default int ItemMaximumAmount()
