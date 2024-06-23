@@ -63,6 +63,6 @@ public class ShopUtils {
 
     public void closeShop() {
         log.info("Attempting to close shop");
-        //EthanApiPlugin.invoke(-1, -1, 26, -1, -1, "", "", -1, -1);
+        EthanApiPlugin.invoke(-1, -1, 26, -1, -1, -1, "", "", -1, -1);
     }
 }
