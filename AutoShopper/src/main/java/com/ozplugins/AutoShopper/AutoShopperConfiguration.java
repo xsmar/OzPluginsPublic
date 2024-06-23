@@ -4,7 +4,7 @@ import net.runelite.client.config.*;
 
 @ConfigGroup("AutoShopper")
 public interface AutoShopperConfiguration extends Config {
-    String version = "v1.0";
+    String version = "v0.2";
 
     @ConfigItem(
             keyName = "instructions",
@@ -14,7 +14,7 @@ public interface AutoShopperConfiguration extends Config {
             section = "instructionsConfig"
     )
     default String instructions() {
-        return "Start next to the shop you want to buy from. \n\n Set the item name, amount and minimum amount to stop buying the item from the shop. \n\n" +
+        return "Start next to the shop you want to buy from. \n\nSet the item name, amount and minimum amount to stop buying the item from the shop. \n\n" +
                 "Make sure you have coins in your inventory. If banking is enabled, ensure a bank is nearby.";
     }
 
@@ -207,18 +207,6 @@ public interface AutoShopperConfiguration extends Config {
             closedByDefault = true
     )
     String UIConfig = "UIConfig";
-
-    @ConfigItem(
-            keyName = "UISetting",
-            name = "UI Layout: ",
-            description = "Choose what UI layout you'd like.",
-            position = 81,
-            section = "UIConfig",
-            hidden = false
-    )
-    default UISettings UISettings() {
-        return UISettings.FULL;
-    }
 
     @ConfigItem(
             keyName = "enableUI",

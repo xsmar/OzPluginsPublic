@@ -77,7 +77,6 @@ public class AutoShopperPlugin extends Plugin {
 
     AutoShopperState state;
     public int timeout = 0;
-    UISettings uiSetting;
     private static final int MAX_PLAYER_COUNT = 1950;
 
     public LocalPoint playerLocalPoint;
@@ -96,7 +95,6 @@ public class AutoShopperPlugin extends Plugin {
         needsToHopWorld = false;
         botTimer = Instant.now();
         state = null;
-        uiSetting = config.UISettings();
         keyManager.registerKeyListener(pluginToggle);
         overlayManager.add(overlay);
     }
@@ -157,7 +155,6 @@ public class AutoShopperPlugin extends Plugin {
         if (client.getGameState() != GameState.LOGGED_IN) {
             return;
         }
-        uiSetting = config.UISettings();
         playerLocalPoint = client.getLocalPlayer().getLocalLocation();
 
         state = getState();
@@ -374,7 +371,6 @@ public class AutoShopperPlugin extends Plugin {
                 EthanApiPlugin.sendClientMessage("Auto Shopper enabled.");
             });
             botTimer = Instant.now();
-            uiSetting = config.UISettings();
             keyManager.registerKeyListener(pluginToggle);
         }
     }

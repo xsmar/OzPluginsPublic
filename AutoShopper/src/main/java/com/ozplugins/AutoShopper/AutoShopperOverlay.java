@@ -57,69 +57,43 @@ class AutoShopperOverlay extends OverlayPanel {
                 .color(ColorUtil.fromHex("#FFE247"))
                 .build());
 
-        if (plugin.uiSetting != UISettings.NONE) {
-            if (plugin.enablePlugin) {
-                panelComponent.setPreferredSize(new Dimension(200, 200));
-                panelComponent.setBorder(new Rectangle(5, 5, 5, 5));
+        if (plugin.enablePlugin) {
+            panelComponent.setPreferredSize(new Dimension(200, 200));
+            panelComponent.setBorder(new Rectangle(5, 5, 5, 5));
 
-                panelComponent.getChildren().add(TitleComponent.builder()
-                        .text("Plugin Enabled")
-                        .color(Color.GREEN)
-                        .build());
+            panelComponent.getChildren().add(TitleComponent.builder()
+                    .text("Plugin Enabled")
+                    .color(Color.GREEN)
+                    .build());
 
-                switch (plugin.uiSetting) {
-                    case FULL:
-                        panelComponent.getChildren().add(LineComponent.builder()
-                                .left("Status:")
-                                .leftColor(Color.WHITE)
-                                .right(infoStatus)
-                                .rightColor(Color.WHITE)
-                                .build());
+            panelComponent.getChildren().add(LineComponent.builder()
+                    .left("Status:")
+                    .leftColor(Color.WHITE)
+                    .right(infoStatus)
+                    .rightColor(Color.WHITE)
+                    .build());
 
-                        panelComponent.getChildren().add(LineComponent.builder()
-                                .left("Time running:")
-                                .leftColor(Color.WHITE)
-                                .right(formatDuration(duration.toMillis(), timeFormat))
-                                .rightColor(Color.WHITE)
-                                .build());
+            panelComponent.getChildren().add(LineComponent.builder()
+                    .left("Time running:")
+                    .leftColor(Color.WHITE)
+                    .right(formatDuration(duration.toMillis(), timeFormat))
+                    .rightColor(Color.WHITE)
+                    .build());
 
-                        panelComponent.getChildren().add(LineComponent.builder()
-                                .left("Timeout:")
-                                .leftColor(Color.WHITE)
-                                .right(String.valueOf(plugin.timeout))
-                                .rightColor(Color.WHITE)
-                                .build());
-                        break;
+            panelComponent.getChildren().add(LineComponent.builder()
+                    .left("Timeout:")
+                    .leftColor(Color.WHITE)
+                    .right(String.valueOf(plugin.timeout))
+                    .rightColor(Color.WHITE)
+                    .build());
 
-
-                    case DEFAULT:
-                        panelComponent.getChildren().add(LineComponent.builder()
-                                .left("Status:")
-                                .leftColor(Color.WHITE)
-                                .right(infoStatus)
-                                .rightColor(Color.WHITE)
-                                .build());
-
-                        panelComponent.getChildren().add(LineComponent.builder()
-                                .left("Time running:")
-                                .leftColor(Color.WHITE)
-                                .right(formatDuration(duration.toMillis(), timeFormat))
-                                .rightColor(Color.WHITE)
-                                .build());
-                        break;
-
-                    case SIMPLE:
-
-                        break;
-                }
-
-            } else {
-                panelComponent.getChildren().add(TitleComponent.builder()
-                        .text("Plugin Disabled")
-                        .color(Color.RED)
-                        .build());
-            }
+        } else {
+            panelComponent.getChildren().add(TitleComponent.builder()
+                    .text("Plugin Disabled")
+                    .color(Color.RED)
+                    .build());
         }
+
         return super.render(graphics);
     }
 }
