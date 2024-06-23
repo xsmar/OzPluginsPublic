@@ -202,7 +202,12 @@ public class AutoShopperPlugin extends Plugin {
             timeout = util.tickDelay();
             return;
         }
-
+            
+        if (shopUtils.getShopItemAmount(config.ItemName()) > config.ItemMaximumAmount()) {
+            needsToHopWorld = true;
+            return;
+        }
+            
         if (shopUtils.getShopItemAmount(config.ItemName()) >= config.ItemMinimumAmount()) {
             overlay.infoStatus = "Buying: " + config.ItemName();
             shopUtils.buyXAmountFromShop(config.ItemName(), config.AmountToBuy());
